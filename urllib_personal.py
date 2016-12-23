@@ -2,7 +2,6 @@
 import urllib
 import re 
 
-blah = 'test'
 
 def page_crawl_pick(url, regular_expression):
 	"""
