@@ -1,0 +1,11 @@
+
+
+TODO
+1. web scrape http://sc.judiciary.gov.ph/jurisprudence/
+-http://sc.judiciary.gov.ph/jurisprudence/2016/toc/january.php
+
+	- get all web page source code per month
+
+2. job to download all pdfs per month
+
+3. get list of pol names to scan
