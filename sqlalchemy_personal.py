@@ -16,24 +16,12 @@ class Cases(Base):
 
     id = Column(Integer, primary_key=True)
     pdf = Column(String(250), nullable=False)
-    prosecutor_defendant = Column(String(300))
-    gr_number = Column(String(300))
-    date = Column(String(50)) #figure out date format
-
-
-class Items(Base):  #class
-    __tablename__ = 'items'  #table
-
-    id = Column(Integer, primary_key=True)  #mapper
-    name = Column(String(250), nullable=False)
-    description = Column(String(300), nullable=True)
-    categoryID = Column(Integer, ForeignKey('categories.id'))
-    dateadded = Column(DateTime, default = datetime.datetime.utcnow)
-    user_id = Column(Integer, ForeignKey('users.id'))
-    image = Column(String(250))
-    users = relationship(Users)
-
-
+    party1 = Column(String(300))
+    party2 = Column(String(300))
+    gr_number = Column(Integer)
+    date_day = Column(Integer)
+    date_month = Column(Integer)
+    date_year = Column(Integer)
 
 
 
